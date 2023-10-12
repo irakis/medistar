@@ -1,0 +1,67 @@
+import React from 'react';
+import styles from './Header.module.scss';
+import clsx from 'clsx';
+
+const Header = () => {
+    return(
+        <div className={styles.header}>
+            <div className='row d-md-flex d-sm-block align-items-center'>
+                <div className='col-md-10 col-sm-12 '>
+                    <ul className='list-inline-horizontal'>
+                        <li className='list-inline-item'>
+                            <span class="bi bi-geo-alt">
+                                adress
+                            </span>
+                        </li>
+                        <li className='list-inline-item'>
+                            <span class="bi bi-phone">
+                                +48 345666777
+                            </span>
+                        </li>
+                        <li className='list-inline-item'>
+                            <span class="bi bi-envelope-at pr-1">
+                                 mail adress
+                            </span>
+                        </li>    
+                    </ul>
+                </div> 
+                <div className='col-md-1 col-sm-6'><i className={clsx(styles.icon,"bi bi-facebook justify-content-center")}></i></div>  
+                <div className='col-md-1 col-sm-6'><img src={`${process.env.PUBLIC_URL}/images/icons/POL_BIP_icon.svg.png`} alt='bip_icon'></img></div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href='/'>
+                    <img src={`${process.env.PUBLIC_URL}/images/common/medistar_logo.png`} alt='medistar_logo'/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/">Features</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/">Action</a></li>
+                        <li><a class="dropdown-item" href="/">Another action</a></li>
+                        <li><a class="dropdown-item" href="/">Something else here</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+    )
+}
+export default Header;

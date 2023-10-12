@@ -1,0 +1,22 @@
+@import '../styles/settings.scss';
+
+.card {
+    position: relative;
+    height: 600px;
+    background-color: white;
+    h3, p {
+        padding: 36px;
+    }
+
+    img {
+        object-fit: cover;
+        overflow: hidden;
+        height: 600px;
+        width: 100%;
+        padding: 0px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
+

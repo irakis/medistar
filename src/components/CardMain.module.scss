@@ -1,0 +1,18 @@
+@import '../styles/settings.scss';
+
+.cardMain {
+    background-color: white;
+    height: 400px;
+
+
+    h3, h4, p {
+        padding: 36px;
+    }
+    img {
+        object-fit: cover;
+        overflow: hidden;
+        height: 400px;
+        width: 100%;
+        padding: 30px;
+    }
+}

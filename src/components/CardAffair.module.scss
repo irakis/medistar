@@ -1,0 +1,58 @@
+@import '../styles//settings.scss';
+
+.cardAffair {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    text-align: center;
+    transition: 0.5s;
+    &:hover .overlay{
+        opacity: 0.5;
+        img {
+            scale: 110%;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    img {
+        object-fit:cover;
+        height: 300px;
+        width: 100%;
+        &:hover {
+            scale: 110%;
+        }
+    }
+    
+    .readElse {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .link {
+        text-decoration: none;
+        color: white;
+    }
+}

@@ -1,0 +1,65 @@
+@import '../styles/settings.scss';
+
+.home {
+    .slideUp {
+        height: 750px;
+        overflow: hidden;
+        position: relative;
+        background-image: url(../../public/images/pexels-rdne-stock-project-6129655.jpg);
+    }
+    .info {
+        position: absolute;
+        display: block;
+        text-align: center;
+        padding: 25px;
+        left: 100px;
+        top: 50px;
+        width: 350px;
+        height: 400px;
+        background-color: $background-color-green;
+    }
+    a {
+        margin: 32px auto;
+    }
+    .infoCall {
+        height: 90px;
+        background-color: #f0f0f0;
+        text-align: center;
+        color: $background-color-green;
+        padding-top: 25px;
+    }
+    button {
+        margin: 0 0 0 36px;
+        background-color: $background-color-green;
+        a {
+            text-decoration: none;
+            color: #f0f0f0;
+        }
+    }
+    .infoCallMain {
+        height: 90px;
+        background-color: #f0f0f0;
+        text-align: left;
+        color: $background-color-green;
+        padding-top: 25px;
+    }
+    .affairs {
+        padding: 0 60px 0 60px;
+        height: 500px;
+        display: flex;
+        background-color: white;
+    }
+
+    .slideBottom {
+        background-image: url(../../public/images/cards/hallway-5979689_1280.jpg);
+        height: 750px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: sticky;
+        bottom: 30px;
+        z-index: -1;
+        
+    }
+
+}
