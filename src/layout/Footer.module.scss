@@ -1,5 +1,10 @@
 @import '../styles/settings.scss';
 
+@keyframes box {
+   from {position: absolute; left: -200px; opacity: 0}
+    to {position: relative; padding-top: 40px; opacity: 1}
+}
+
 .footer {
     height: 200px;
     background-color: #666;
@@ -18,16 +23,27 @@
         background-color: #648c66;
         height: 200px;
         padding-top: 40px;
+        animation-name: box;
+        animation-duration: 4s;
+        //transition: 4s;
     }
     .boxPhone {
         background-color: #346936;
         height: 200px;
         padding-top: 40px;
+        animation-name: box;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        //transition: 4s;
     }
     .boxEnvelope {
         background-color: #4fad52;
         height: 200px;
         padding-top: 40px;
+        animation-name: box;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        //transition: 4s;
     }
 }
 .copy {
