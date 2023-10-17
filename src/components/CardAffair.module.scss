@@ -7,12 +7,17 @@
     overflow: hidden;
     height: 450px;
     text-align: center;
-    transition: 0.5s;
+
     &:hover .overlay{
+        scale: 110%;
         opacity: 0.5;
-        img {
+        transition: 0.8s; 
+    }
+    
+    &:hover img {
             scale: 110%;
-        }
+            transition: 0.8s; 
+            height: 300px;
     }
 
     .overlay {
@@ -33,9 +38,7 @@
         object-fit:cover;
         height: 300px;
         width: 100%;
-        &:hover {
-            scale: 110%;
-        }
+        transition: scale 0.8s;
     }
     
     .readElse {

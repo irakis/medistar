@@ -4,6 +4,7 @@ import Card from '../components/Card';
 import clsx from 'clsx';
 import CardMain from '../components/CardMain';
 import CardAffair from '../components/CardAffair';
+import SlideBottomComponent from '../components/SlideBottomComponent';
 
 const Home = () => {
     return(
@@ -12,13 +13,13 @@ const Home = () => {
                 <div className={styles.info}>
                     <h2>INFORMACJA</h2>
                     <p>lorem ipsum i zakładzie ZOLL t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'</p>
-                    <a href='/' role="button" class="btn btn-outline-light">
+                    <a href='/' role="button" className="btn btn-outline-light">
                         Przeczytaj więcej...
                     </a>
                 </div>
             </div>
 
-            {/*----------------AFFAIRS START-----------------------*/}
+        {/*----------------AFFAIRS START-----------------------*/}
 
             <div className={clsx(styles.affairs, 'row d-flex align-items-center')}>
                 <div className='col-md-4 col-sm-12'>
@@ -48,11 +49,11 @@ const Home = () => {
                 
             </div>
 
-            {/*----------------AFFAIRS END -----------------------*/}
+        {/*----------------AFFAIRS END -----------------------*/}
 
             <div className='row'>
                 <div className={clsx(styles.infoCallMain, 'col-12')}>
-                    <button type="button" class="btn btn-success">
+                    <button type="button" className="btn btn-success">
                         <a href='/'>Zobacz wszystkie aktualnosci</a>
                     </button>
                 </div>
@@ -134,15 +135,33 @@ const Home = () => {
                     />
                 </div>
             </div>
-            
 
-            <div className={styles.slideBottom}>backgroundImage
-                <div className='info'>
-                    <h2>ikonki</h2>
-                    <p>opis</p>
-                    <p>cyferki</p>
+        {/*-------------SLIDE BOTTOM START--------------------*/}    
+
+            <div className={styles.slideBottom}>
+                <div className={clsx(styles.slideInner, 'row justify-content-md-center')}>
+                    <SlideBottomComponent
+                        text='Miejsc w zakładzie opiekuńczo – leczniczym'
+                        url={`${process.env.PUBLIC_URL}/images/icons/id-card-clip-solid.svg`}
+                        alt='id-card-clip'
+                        number={58}
+                    />
+                    <SlideBottomComponent
+                        text='Miejsc zakładzie leczniczym'
+                        url={`${process.env.PUBLIC_URL}/images/icons/bed-pulse-solid.svg`}
+                        alt='bed-pulse'
+                        number={19}
+                    />
+                    <SlideBottomComponent
+                        text='Opieka sprawowana całodobowo'
+                        url={`${process.env.PUBLIC_URL}/images/icons/user-doctor-solid.svg`}
+                        alt='bed-pulse'
+                        number={24}
+                    />
                 </div>
             </div>
+
+        {/*-------------SLIDE BOTTOM END--------------------*/}   
 
         </div>
     )

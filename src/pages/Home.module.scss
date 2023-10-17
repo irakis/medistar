@@ -59,6 +59,11 @@
         position: sticky;
         bottom: 30px;
         z-index: -1;
+        .slideInner {
+            margin: 250px 28px;
+            position: absolute;
+            width: 100%;
+        }
         
     }
 

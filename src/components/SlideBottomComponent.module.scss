@@ -1,0 +1,15 @@
+@import url(../styles/settings.scss);
+
+.slideBottomComponent {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    img {
+        width: 65px;
+        height: 65px;
+        display: block;
+        margin: auto;
+        color: white;
+        filter: invert(1);
+    }
+}

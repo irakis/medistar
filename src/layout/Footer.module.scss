@@ -1,0 +1,43 @@
+@import '../styles/settings.scss';
+
+.footer {
+    height: 200px;
+    background-color: #666;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-left: 90px;
+    padding-right: 90px;
+    img {
+        scale: 2;
+        margin:auto;
+        filter: invert(1);
+        padding: 30px;
+    }
+    .boxMap {
+        background-color: #648c66;
+        height: 200px;
+        padding-top: 40px;
+    }
+    .boxPhone {
+        background-color: #346936;
+        height: 200px;
+        padding-top: 40px;
+    }
+    .boxEnvelope {
+        background-color: #4fad52;
+        height: 200px;
+        padding-top: 40px;
+    }
+}
+.copy {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 0 30px;
+    align-content: center;
+    justify-content: space-between;
+    p {
+        padding: 15px;
+    }
+}
