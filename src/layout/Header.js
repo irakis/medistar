@@ -60,27 +60,27 @@ const Header = () => {
                         <a className="nav-link active" aria-current="page" href="/">Start</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/">Oferta</a>
+                        <a className="nav-link" href="/offer">Oferta</a>
                     </li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
+                        <a className="nav-link dropdown-toggle" href={()=>false} id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
                             aria-expanded="false" onClick={handleClickList2}>
                             Dla odwiedzających
                         </a>
                         <ul className={`${list2Collapsed === false ? 'show' : ''} dropdown-menu`} aria-labelledby="navbarDropdownMenuLink2">
-                            <li><a className="dropdown-item" href="/">Galeria</a></li>
+                            <li><a className="dropdown-item" href="/gallery">Galeria</a></li>
                             <li><a className="dropdown-item" href="/">Wykaz telefonów</a></li>
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
+                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href={()=>false} role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
                             aria-expanded="false" onClick={handleClick}>
                             Dla pacjenta
                         </a>
                         <ul className={`${listCollapsed === false ? 'show' : ''} dropdown-menu`} aria-labelledby="navbarDropdownMenuLink">
                             <li><a className="dropdown-item" href="/">Dokumenty do pobrania</a></li>
-                            <li><a className="dropdown-item" href="/">Procedura przyjęcia</a></li>
-                            <li><a className="dropdown-item" href="/">Złożenie dokumentów</a></li>
+                            <li><a className="dropdown-item" href="/procedure">Procedura przyjęcia</a></li>
+                            <li><a className="dropdown-item" href="/application">Złożenie dokumentów</a></li>
                         </ul>
                     </li>
                     <li className="nav-item">

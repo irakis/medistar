@@ -7,22 +7,19 @@ const SlideBottomComponent = (parameters) => {
     const [time, setTime] = useState(0);
     const numberLimit = parameters.number;
     
-    const displayTime = () => {
-        setTime(time => (time + 0));
-    };
+    const A = setInterval(
+        () => { setTime(prevTime => (prevTime + 0));
 
-    const A = setInterval(displayTime, 1000);
+            if(time === numberLimit) {
+               
+                console.log('stop fucking counting!!!!');
+                clearInterval(A);
+            }
 
-
-    if(time === numberLimit) {
-        window.alert('stop!!')
-        console.log('stop fucking counting!!!!');
-        clearInterval(A);
-    };
-
+    }, 1000);
 
     return(
-        <div className={clsx(styles.slideBottomComponent,"col-3")} onLoad={displayTime}>
+        <div className={clsx(styles.slideBottomComponent,"col-3")}>
             <div className='row align-items-center text-center'>
                 <div className='col-6'>
                     <img src={parameters.url} alt={parameters.alt}/>
