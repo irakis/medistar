@@ -10,9 +10,11 @@ const Header = () => {
 
     const handleClick = () => {
         setListCollapsed(!listCollapsed);
+        setList2Collapsed(true);
     }
     const handleClickList2 = () => {
         setList2Collapsed(!list2Collapsed);
+        setListCollapsed(true);
     }
 
     const handleToggler = () => {
@@ -69,7 +71,7 @@ const Header = () => {
                         </a>
                         <ul className={`${list2Collapsed === false ? 'show' : ''} dropdown-menu`} aria-labelledby="navbarDropdownMenuLink2">
                             <li><a className="dropdown-item" href="/gallery">Galeria</a></li>
-                            <li><a className="dropdown-item" href="/">Wykaz telefonów</a></li>
+                            <li><a className="dropdown-item" href="/phones">Wykaz telefonów</a></li>
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
@@ -78,16 +80,16 @@ const Header = () => {
                             Dla pacjenta
                         </a>
                         <ul className={`${listCollapsed === false ? 'show' : ''} dropdown-menu`} aria-labelledby="navbarDropdownMenuLink">
-                            <li><a className="dropdown-item" href="/">Dokumenty do pobrania</a></li>
+                            <li><a className="dropdown-item" href="/documents">Dokumenty do pobrania</a></li>
                             <li><a className="dropdown-item" href="/procedure">Procedura przyjęcia</a></li>
                             <li><a className="dropdown-item" href="/application">Złożenie dokumentów</a></li>
                         </ul>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/">Zakres udzielanych świadczeń</a>
+                        <a className="nav-link" href="/benefits">Zakres udzielanych świadczeń</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/">Kontakt</a>
+                        <a className="nav-link" href="/contact">Kontakt</a>
                     </li>
                 </ul>
                 </div>

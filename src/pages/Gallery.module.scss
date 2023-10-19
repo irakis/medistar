@@ -3,6 +3,7 @@
 .gallery {
     object-fit: cover;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     .imageParent {
         width: 100%;
@@ -10,11 +11,14 @@
         object-fit: fill;
         overflow: hidden;
         margin: 8px;
+        //background-color: #666;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         img {
             scale: 1.3;
             width: 100%;
             height: auto;
-            rotate: 90deg;            
+            rotate: 90deg;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);            
         }
         .horizontal {
             rotate: 0deg;
