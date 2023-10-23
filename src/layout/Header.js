@@ -50,7 +50,7 @@ const Header = () => {
                     <img src={`${process.env.PUBLIC_URL}/images/icons/iso.svg`} alt='iso_icon'/>
                 </div>  
                 <div className={clsx(styles.social,'col-md-1 col-sm-6 text-center')}>
-                    <a className={styles.bip} href='https://www.gov.pl/web/bip/czym-jest-bip' target='_blank'rel='noreferrer'>
+                    <a className={styles.bip} href={`${process.env.REACT_APP_BIP}`} target='_blank'rel='noreferrer'>
                         <img src={`${process.env.PUBLIC_URL}/images/icons/POL_BIP_icon.svg.png`} alt='bip_icon'></img>
                     </a>
                 </div>
@@ -73,7 +73,7 @@ const Header = () => {
                         <a className="nav-link" href="/offer">Oferta</a>
                     </li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href={()=>false} id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
+                        <a className="nav-link dropdown-toggle" href='#' id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
                             aria-expanded="false" onClick={handleClickList2}>
                             Dla odwiedzających
                         </a>
@@ -83,7 +83,7 @@ const Header = () => {
                         </ul>
                     </li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href={()=>false} role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
+                        <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href='#' role="button" data-bs-toggle="dropdown" aria-haspopup="true" 
                             aria-expanded="false" onClick={handleClick}>
                             Dla pacjenta
                         </a>

@@ -7,7 +7,7 @@ const Gallery = () => {
     return(
         <div>
             <div className="row d-flex justify-content-center">
-                <div className={clsx(styles.gallery, "col-5 m-0 p-0")}>
+                <div className={clsx(styles.gallery, "col-lg-5 col-md-12 m-0 p-0")}>
                     <div className={styles.imageParent}>
                         <img src={`${process.env.PUBLIC_URL}/images/gallery/gallerySite/Optimized-20230221_093027.jpg`} alt='picture1'/>
                     </div>
@@ -21,7 +21,7 @@ const Gallery = () => {
                         <img className={styles.smallImage} src={`${process.env.PUBLIC_URL}/images/gallery/gallerySite/Optimized-20230825_102059.jpg`} alt='picture8'/>
                     </div>
                 </div>
-                <div className={clsx(styles.gallery, "col-5 m-0 p-0")}>
+                <div className={clsx(styles.gallery, "col-lg-5 col-md-12 m-0 p-0")}>
                     <div className={styles.imageParent}>
                         <img className={styles.smallImage} src={`${process.env.PUBLIC_URL}/images/gallery/gallerySite/Optimized-20230420_092228.jpg`} alt='picture5'/>
                     </div>

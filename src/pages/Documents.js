@@ -6,8 +6,11 @@ const Documents = () => {
     return(
         <div className={clsx(styles.documens, " d-flex flex-column align-items-center p-4")}>
             <h2>Very important documents to download</h2>
-            <a href={`${process.env.PUBLIC_URL}/documents/Oferta_usługi_IT_dla_MEDISTAR.pdf`} target="_blank" rel='noreferrer'>document 1</a>
-            <a href={`${process.env.PUBLIC_URL}/documents/IOM.pdf`} target="_blank" rel='noreferrer'>document 2</a>
+            <a href={`${process.env.PUBLIC_URL}/documents/Wniosek_o_skierowanie_do_zol.pdf`} target="_blank" rel='noreferrer'>Wniosek o skierowanie do ZOL</a>
+            <a href={`${process.env.PUBLIC_URL}/documents/Wywiad_pielęgniarski_i_zaświadczenie_lekarskie.pdf`} target="_blank" rel='noreferrer'>Wywiad pielęgniarski i zaświadczenie lekarskie</a>
+            <a href={`${process.env.PUBLIC_URL}/documents/Skierowanie_do_ZOL.pdf`} target="_blank" rel='noreferrer'>Skierowanie do ZOL</a>
+            <a href={`${process.env.PUBLIC_URL}/documents/Skala_Barthel.pdf`} target="_blank" rel='noreferrer'>Skala Barthel</a>
+            <a href={`${process.env.PUBLIC_URL}/documents/Skala_Glasgow.pdf`} target="_blank" rel='noreferrer'>Skala Glasgow</a>
             
     </div>
     )

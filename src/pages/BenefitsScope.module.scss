@@ -1,6 +1,9 @@
 @import url(./BenefitsScope.module.scss);
 
 .benefitsScope {
+    h2 {
+        margin-bottom: 40px;
+    }
     p {
         text-align: left;
         padding: 0 60px;

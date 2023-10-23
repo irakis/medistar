@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Home.module.scss';
 import Card from '../components/Card';
 import clsx from 'clsx';
@@ -50,7 +50,6 @@ const Home = () => {
             <li>wsparcie pacjentów,</li>
         </ul>
     `
-
     const terapiaText = `
         <p>
             Terapia zajęciowa jest ważnym elementem pracy z osobami starszymi, przebywającymi w ZOL „Stara
@@ -65,25 +64,33 @@ const Home = () => {
             Terapia zajęciowa odbywa się codziennie od poniedziałku do piątku.
         </p>
     `
+    const targets = document.querySelectorAll('.slideBottom');
+    const handleIntersectionObserver = () => {
+        let options = {
+            root: null ,
+            rootMargin: '0px',
+            treshold: 1.0,
+        }
 
-    window.onload = init;
+        //const targets = document.querySelectorAll('.slideBottom');
 
-    function init() {
-        let target = document.getElementById('#slideBottom');
-        console.log(target);
+        const activeObserver = (target) => {
+            const sliderObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    console.log(entry)
+            })}, options)
+            sliderObserver.observe(target);
+        };
+
+        targets.forEach(activeObserver);
     }
 
-    {/*
-    let options = {
-        root: target,
-        rootMargin: '0px',
-        treshold: 1.0,
-    }
-    let callback = SlideBottomComponent.updated;
-    let observer = new IntersectionObserver(callback, options);
+    useEffect(() => {
+        console.log(targets);
+        handleIntersectionObserver();
+    }, [targets]);
     
-    observer.observe(target);
-*/}
+
 
     return(
         <div className={styles.home}>
@@ -241,13 +248,14 @@ const Home = () => {
                         text='Wonych miejsc w zakładzie leczniczym'
                         url={`${process.env.PUBLIC_URL}/images/icons/bed-pulse-solid.svg`}
                         alt='bed-pulse'
-                        number={1}
+                        number={0}
                     />
                     <SlideBottomComponent
                         text='Opieka sprawowana całodobowo'
                         url={`${process.env.PUBLIC_URL}/images/icons/user-doctor-solid.svg`}
                         alt='bed-pulse'
                         number={24}
+                        name = 'H'
                     />
                 </div>
             </div>

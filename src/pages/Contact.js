@@ -10,14 +10,14 @@ const Contact = () => {
              width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='starawies_map'></iframe>
     </div>
     <div className="row mb-5">
-        <div className={clsx(styles.adresColumn,"col-4 d-block text-center")}>
+        <div className={clsx(styles.adresColumn,"col-lg-4 col-md-12 d-block text-center")}>
             <h3>MEDISTAR</h3>
             <p>NIP: 7123415825</p>
             <p>ul. TARGOWA 9/53</p>
             <p> 21-040 ŚWIDNIK</p>
             <p>LUBELSKIE</p>
         </div>
-        <div className="col-4">
+        <div className="col-lg-4 col-md-12">
             <div className={clsx(styles.puzzle,'d-flex align-items-center')}>
                 <div className={clsx(styles.hexagon, 'd-flex justify-content-center align-items-center')}>
                     <img src={`${process.env.PUBLIC_URL}/images/icons/map.svg`} alt='icon_map'/>
@@ -43,7 +43,7 @@ const Contact = () => {
 
             </div>
         </div>
-        <div className="col-4">
+        <div className="col-lg-4 col-md-12">
             <div className={clsx(styles.puzzle,'d-flex align-items-center')}>
                 <div className={clsx(styles.hexagon, 'd-flex justify-content-center align-items-center')}>
                     <img src={`${process.env.PUBLIC_URL}/images/icons/telephone.svg`} alt='icon_telephone'/>

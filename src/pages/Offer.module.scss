@@ -1,11 +1,14 @@
 @import '../styles/settings.scss';
 
 .offer {
-    margin: 30px 390px;
+    margin: 30px 190px;
+    @media (max-width: 768px) {
+        margin: 6px;
+    }
     h2 {
         margin-bottom: 40px;
     }
-    p {
+    p, ul{
         margin-bottom: 36px;
         text-align: justify;
     }
