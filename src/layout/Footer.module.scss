@@ -13,6 +13,11 @@
     color: white;
     padding-left: 90px;
     padding-right: 90px;
+    @media (max-width: 991.98px) {
+        height: auto;
+        padding: auto;
+        display: block;
+    }
     img {
         scale: 2;
         margin:auto;
@@ -25,7 +30,9 @@
         padding-top: 40px;
         animation-name: box;
         animation-duration: 4s;
-        //transition: 4s;
+        @media (max-width: 575.98px) {
+            height: auto;
+        }
     }
     .boxPhone {
         background-color: #346936;
@@ -34,7 +41,10 @@
         animation-name: box;
         animation-duration: 4s;
         animation-delay: 1s;
-        //transition: 4s;
+        @media (max-width: 575.98px){
+            height: auto;
+            padding:auto;
+        }
     }
     .boxEnvelope {
         background-color: #4fad52;
@@ -43,7 +53,10 @@
         animation-name: box;
         animation-duration: 4s;
         animation-delay: 2s;
-        //transition: 4s;
+        @media (max-width: 575.98px){
+            height: auto;
+            padding:auto;
+        }
     }
 }
 .copy {

@@ -29,23 +29,31 @@ const Header = () => {
                     <ul className='list-inline-horizontal'>
                         <li className='list-inline-item'>
                             <span className="bi bi-geo-alt">
-                                adress
+                                <a href='/contact'>
+                                    Stara Wieś Pierwsza 99, 23-100 Bychawa
+                                </a>
                             </span>
                         </li>
                         <li className='list-inline-item'>
                             <span className="bi bi-phone">
-                                +48 345666777
+                                +48 81 5032277
                             </span>
                         </li>
                         <li className='list-inline-item'>
                             <span className="bi bi-envelope-at pr-1">
-                                 mail adress
+                                 mail adress: zol_starawies@10g.pl
                             </span>
                         </li>    
                     </ul>
                 </div> 
-                <div className='col-md-1 col-sm-6'><i className={clsx(styles.icon,"bi bi-facebook justify-content-center")}></i></div>  
-                <div className='col-md-1 col-sm-6'><img src={`${process.env.PUBLIC_URL}/images/icons/POL_BIP_icon.svg.png`} alt='bip_icon'></img></div>
+                <div className={clsx(styles.social, 'col-md-1 col-sm-6')}>
+                    <img src={`${process.env.PUBLIC_URL}/images/icons/iso.svg`} alt='iso_icon'/>
+                </div>  
+                <div className={clsx(styles.social,'col-md-1 col-sm-6 text-center')}>
+                    <a className={styles.bip} href='https://www.gov.pl/web/bip/czym-jest-bip' target='_blank'rel='noreferrer'>
+                        <img src={`${process.env.PUBLIC_URL}/images/icons/POL_BIP_icon.svg.png`} alt='bip_icon'></img>
+                    </a>
+                </div>
             </div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
@@ -98,4 +106,5 @@ const Header = () => {
         </div>
     )
 }
+
 export default Header;

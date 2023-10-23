@@ -7,36 +7,41 @@ const Footer = () => {
         <>
             <div className={styles.footer}>
                 <div className="row justify-content-center">
-                    <div className={clsx(styles.boxMap,"col-4")}>
+                    <div className={clsx(styles.boxMap,"col-lg-4 col-sm-11")}>
                         <div className="row align-items-center">
                             <div className="col-3">
-                                <img src={`${process.env.PUBLIC_URL}/images/icons/map.svg`} alt='map'/>
+                                <a href='/contact'>
+                                    <img src={`${process.env.PUBLIC_URL}/images/icons/map.svg`} alt='map'/>
+                                </a>
                             </div>
                             <div className="col-9">
                                 <p>Jak do nas dotrzeć?</p>
-                                <h4>Znajdź nas na mapie</h4>
+                                <h4>Stara Wieś Pierwsza 99, </h4>
+                                <h4>23-100 Bychawa </h4>
                             </div>
                         </div>
                     </div>
-                    <div className={clsx(styles.boxPhone,"col-4")}>
+                    <div className={clsx(styles.boxPhone,"col-lg-4 col-sm-11")}>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/telephone.svg`} alt='phone_1'/>
                             </div>
                             <div className="col-9">
+                                <p>Masz pytania?</p>
                                 <p>Zadzwoń do nas</p>
-                                <h4>+48 123456789</h4>
+                                <h4>+48 500 867 770</h4>
                             </div>
                         </div>
                     </div>
-                    <div className={clsx(styles.boxEnvelope, "col-4")}>
+                    <div className={clsx(styles.boxEnvelope, "col-lg-4 col-sm-11")}>
                         <div className="row align-items-center py-auto">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/envelope-open.svg`} alt='envelope-open'/>
                             </div>
                             <div className="col-9">
                                 <p>Masz pytania?</p>
-                                <h4>Napisz do nas</h4>
+                                <p>Napisz do nas</p>
+                                <h4>zol_starawies@10g.pl</h4>
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,10 @@
     margin-top: 40px;
     margin-bottom: 40px;
     color: white;
+    @media (max-width: 575.98px) {
+        margin-top: 8px;
+        margin-bottom: 8px;   
+    }
     img {
         width: 65px;
         height: 65px;

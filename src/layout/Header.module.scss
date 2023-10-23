@@ -1,11 +1,21 @@
 
 .header {
+    a {
+        text-decoration: none;
+        color: black;
+    }
     a img {
         margin: 0px;
         width: auto;
         height: 100%;
         background-color: none;
         border-radius: 25px;
+    }
+    a.bip img {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 0; 
     }
     ul {
         margin: 16px 0px;
@@ -14,15 +24,18 @@
         }
     }
     img {
-        width: 32px;
-        height: 32px;
-        margin: 16px;
+        width: 40px;
+        height: 40px;
+        margin: auto;
 
     }
-    .icon {
-        font-size: 40px;
-        margin: 16px;
-        color: rgba(10, 119, 243, 0.619);
+    .social {
+        @media (max-width: 575.98px){
+            text-align: center;
+            a img{
+                margin: auto;
+            }
+        }
     }
  
 }

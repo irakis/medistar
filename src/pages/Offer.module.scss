@@ -1,7 +1,12 @@
 @import '../styles/settings.scss';
 
 .offer {
+    margin: 30px 390px;
     h2 {
         margin-bottom: 40px;
+    }
+    p {
+        margin-bottom: 36px;
+        text-align: justify;
     }
 }

@@ -6,6 +6,10 @@
         overflow: hidden;
         position: relative;
         background-image: url(../../public/images/pexels-rdne-stock-project-6129655.jpg);
+        @media (max-width: 991.98px) {
+            background-size: cover;
+            mask-repeat: no-repeat;
+        }
     }
     .info {
         position: absolute;
@@ -15,8 +19,13 @@
         left: 100px;
         top: 50px;
         width: 350px;
-        height: 400px;
+        height: 500px;
         background-color: $background-color-green;
+        @media (max-width: 991.98px) {
+            left: 8px;
+            top: 8px;
+            width: 100%;
+        }
     }
     a {
         margin: 32px auto;
@@ -42,16 +51,25 @@
         text-align: left;
         color: $background-color-green;
         padding-top: 25px;
+        @media (max-width: 991.98px) {
+            height: auto;
+            margin: 0;
+            padding: 25px;
+        }
     }
     .affairs {
         padding: 0 60px 0 60px;
         height: 500px;
         display: flex;
         background-color: white;
+        @media (max-width: 991.98px) {
+            height: auto;
+            padding: 6px;
+        }
     }
 
     .slideBottom {
-        background-image: url(../../public/images/cards/hallway-5979689_1280.jpg);
+        background-image: url(../../public/images/image8-min.jpeg);
         height: 750px;
         width: 100%;
         background-size: cover;
@@ -63,6 +81,9 @@
             margin: 250px 28px;
             position: absolute;
             width: 100%;
+            @media (max-width: 991.98px) {
+                margin: 100px 28px;
+            }
         }
         
     }
