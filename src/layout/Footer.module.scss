@@ -10,7 +10,7 @@
     background-color: #666;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: $color-white;
     padding-left: 90px;
     padding-right: 90px;
     @media (max-width: 991.98px) {
@@ -19,13 +19,14 @@
         display: block;
     }
     img {
-        scale: 2;
+        width: 50px;
+        height: 50px;
         margin:auto;
         filter: invert(1);
-        padding: 30px;
+        padding: 8px;
     }
     .boxMap {
-        background-color: #648c66;
+        background-color: $backbround-color-green-dark;
         height: 200px;
         padding-top: 40px;
         animation-name: box;
@@ -35,7 +36,7 @@
         }
     }
     .boxPhone {
-        background-color: #346936;
+        background-color: $background-color-green;
         height: 200px;
         padding-top: 40px;
         animation-name: box;
@@ -47,7 +48,7 @@
         }
     }
     .boxEnvelope {
-        background-color: #4fad52;
+        background-color: $backbround-color-green-light;
         height: 200px;
         padding-top: 40px;
         animation-name: box;
@@ -61,7 +62,7 @@
 }
 .copy {
     background-color: black;
-    color: white;
+    color: $color-white;
     display: flex;
     padding: 0 30px;
     align-content: center;

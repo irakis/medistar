@@ -72,8 +72,6 @@ const Home = () => {
             treshold: 1.0,
         }
 
-        //const targets = document.querySelectorAll('.slideBottom');
-
         const activeObserver = (target) => {
             const sliderObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -115,7 +113,7 @@ const Home = () => {
                 <div className='col-md-4 col-sm-12'>
                     <CardAffair
                         text='Terapia zajęciowa - kształtowanie spostrzegawczości'
-                        url={`${process.env.PUBLIC_URL}/images/gallery/20230918_093658.jpg`}
+                        url={`${process.env.PUBLIC_URL}/images/gallery/20230918_093658.avif`}
                         alt='picture_1'
                         link='/gallery'
                     />
@@ -123,7 +121,7 @@ const Home = () => {
                 <div className='col-md-4 col-sm-12'>
                     <CardAffair
                         text='Terapia zajęciowa - poprawiamy sprawność ręki'
-                        url={`${process.env.PUBLIC_URL}/images/gallery/20231004_102318.jpg`}
+                        url={`${process.env.PUBLIC_URL}/images/gallery/20231004_102318.avif`}
                         alt='picture_2'
                         link='/gallery'
                     />
@@ -131,7 +129,7 @@ const Home = () => {
                 <div className='col-md-4 col-sm-12'>
                     <CardAffair
                         text='Terapia zajęciowa - zajęcia grupowe'
-                        url={`${process.env.PUBLIC_URL}/images/gallery/20230922_093209.jpg`}
+                        url={`${process.env.PUBLIC_URL}/images/gallery/20230922_093209.avif`}
                         alt='picture_2'
                         link='/gallery'
                     />
@@ -144,7 +142,7 @@ const Home = () => {
             <div className='row'>
                 <div className={clsx(styles.infoCallMain, 'col-12')}>
                     <button type="button" className="btn btn-success">
-                        <a href='/'>Zobacz wszystkie aktualnosci</a>
+                        <a href='/gallery'>Zobacz wszystkie aktualnosci</a>
                     </button>
                 </div>
             </div>
@@ -152,7 +150,7 @@ const Home = () => {
             <div className='row'>
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <CardMain
-                        url={`${process.env.PUBLIC_URL}/images/Stara_Wies_1.jpg`}
+                        url={`${process.env.PUBLIC_URL}/images/Stara_Wies_1.avif`}
                         alt='hospital_2'
                     />
                 </div>
@@ -178,7 +176,7 @@ const Home = () => {
             <div className='row h-100'>
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <Card
-                        url={`${process.env.PUBLIC_URL}/images/cards/stethoscope-6497490_640.jpg`}
+                        url={`${process.env.PUBLIC_URL}/images/cards/stethoscope-6497490_640.avif`}
                         alt='hands_1'
                     />
                 </div>
@@ -198,7 +196,7 @@ const Home = () => {
                 </div>
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <Card
-                        url ={`${process.env.PUBLIC_URL}/images/cards/fizjoterapia.jpg`}
+                        url ={`${process.env.PUBLIC_URL}/images/cards/fizjoterapia.avif`}
                         alt='fizoterapia_1'
                     />
                 </div>
@@ -206,7 +204,7 @@ const Home = () => {
             <div className='row'>
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <Card
-                        url ={`${process.env.PUBLIC_URL}/images/cards/hands-2906458_640.jpg`}
+                        url ={`${process.env.PUBLIC_URL}/images/cards/hands-2906458_640.avif`}
                         alt='stetoscope_1'
                     />
                 </div>
@@ -226,7 +224,7 @@ const Home = () => {
                 </div>
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <Card
-                        url={`${process.env.PUBLIC_URL}/images/cards/terapia_zajeciowa.jpg`}
+                        url={`${process.env.PUBLIC_URL}/images/cards/terapia_zajeciowa.avif`}
                         alt='terapia_zajeciowa_1'
                     />
                 </div>

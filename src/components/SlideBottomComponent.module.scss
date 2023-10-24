@@ -1,9 +1,9 @@
-@import url(../styles/settings.scss);
+@import '../styles/settings.scss';
 
 .slideBottomComponent {
     margin-top: 40px;
     margin-bottom: 40px;
-    color: white;
+    color: $color-white;
     @media (max-width: 575.98px) {
         margin-top: 8px;
         margin-bottom: 8px;   
@@ -13,7 +13,7 @@
         height: 65px;
         display: block;
         margin: auto;
-        color: white;
+        color: $color-white;
         filter: invert(1);
     }
 }

@@ -1,7 +1,7 @@
 @import '../styles//settings.scss';
 
 .cardAffair {
-    background-color: white;
+    background-color: $color-white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     overflow: hidden;
@@ -42,7 +42,7 @@
     }
     
     .readElse {
-        color: white;
+        color: $color-white;
         font-size: 20px;
         position: absolute;
         z-index: 2;
@@ -56,6 +56,6 @@
 
     .link {
         text-decoration: none;
-        color: white;
+        color: $color-white;
     }
 }

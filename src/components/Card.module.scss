@@ -2,10 +2,10 @@
 
 .card {
     position: relative;
-    height: 620px;
-    background-color: white;
+    height: 600px;
+    background-color: $color-white;
     h3, p {
-        padding: 36px;
+        padding: 16px 36px;
     }
     ul {
         padding: 8px 48px;

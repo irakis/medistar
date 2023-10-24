@@ -34,7 +34,7 @@ const BenefitsScope = () => {
                     </p>  
                 </div>
                 <div className="col-lg-6 col-sm-12">
-                    <img src={`${process.env.PUBLIC_URL}/images/gallery/gallerySite/Optimized-20230405_100943.jpg`} alt='inner_image'/>
+                    <img src={`${process.env.PUBLIC_URL}/images/gallery/gallerySite/Optimized-20230405_100943.avif`} alt='inner_image'/>
                 </div>
             </div>
         </div>

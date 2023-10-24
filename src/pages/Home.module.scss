@@ -5,10 +5,11 @@
         height: 750px;
         overflow: hidden;
         position: relative;
-        background-image: url(../../public/images/pexels-rdne-stock-project-6129655.jpg);
+        background-image: url(../../public/images/pexels-rdne-stock-project-6129655.avif);
         @media (max-width: 991.98px) {
             background-size: cover;
             mask-repeat: no-repeat;
+            min-height: 250px;
         }
     }
     .info {
@@ -21,10 +22,12 @@
         width: 350px;
         height: 500px;
         background-color: $background-color-green;
+        color: $color-white;
         @media (max-width: 991.98px) {
             left: 8px;
+            right: 8px;
             top: 8px;
-            width: 100%;
+            width: auto;
         }
     }
     a {
@@ -61,7 +64,7 @@
         padding: 0 60px 0 60px;
         height: 500px;
         display: flex;
-        background-color: white;
+        background-color: $color-white;
         @media (max-width: 991.98px) {
             height: auto;
             padding: 6px;
@@ -69,7 +72,7 @@
     }
 
     .slideBottom {
-        background-image: url(../../public/images/image8-min.jpeg);
+        background-image: url(../../public/images/image8-min.avif);
         height: 750px;
         width: 100%;
         background-size: cover;

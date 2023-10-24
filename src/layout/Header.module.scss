@@ -33,9 +33,13 @@
         @media (max-width: 575.98px){
             text-align: center;
             a img{
-                margin: auto;
+                margin: 6px auto;
             }
         }
+    }
+    .logo {
+        width: 200px;
+        justify-items: 131px;
     }
  
 }

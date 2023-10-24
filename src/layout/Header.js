@@ -21,7 +21,6 @@ const Header = () => {
         setIsTogglerCollapsed(!isTogglerCollapsed);
     }
 
-
     return(
         <div className={styles.header}>
             <div className='row d-md-flex d-sm-block align-items-center'>
@@ -46,19 +45,27 @@ const Header = () => {
                         </li>    
                     </ul>
                 </div> 
+
+                {/*----------------------ISO AND BIP START-----------------------------*/}
+
                 <div className={clsx(styles.social, 'col-md-1 col-sm-6')}>
-                    <img src={`${process.env.PUBLIC_URL}/images/icons/iso.svg`} alt='iso_icon'/>
+                    <a  className={styles.bip} href={`${process.env.PUBLIC_URL}/documents/20231024-093618_Optimized.pdf`} target='_blank'rel='noreferrer'>
+                        <img src={`${process.env.PUBLIC_URL}/images/icons/iso.svg`} alt='iso_icon'/>
+                    </a>
                 </div>  
                 <div className={clsx(styles.social,'col-md-1 col-sm-6 text-center')}>
                     <a className={styles.bip} href={`${process.env.REACT_APP_BIP}`} target='_blank'rel='noreferrer'>
                         <img src={`${process.env.PUBLIC_URL}/images/icons/POL_BIP_icon.svg.png`} alt='bip_icon'></img>
                     </a>
                 </div>
+
+                {/*----------------------ISO AND BIP END-----------------------------*/}
+
             </div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href='/'>
-                    <img src={`${process.env.PUBLIC_URL}/images/common/medistar_logo.png`} alt='medistar_logo'/>
+                    <img className={styles.logo} src={`${process.env.PUBLIC_URL}/images/common/medistar_logo.png`} alt='medistar_logo'/>
                 </a>
                 <button className={`${isTogglerCollapsed === false ? 'collapsed' : ''} navbar-toggler`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
                     aria-expanded="false" aria-label="Toggle navigation" onClick={handleToggler}>
