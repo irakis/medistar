@@ -85,30 +85,6 @@ const Home = () => {
         sectionObserver.observe(element);
     }, []);
 
-    useEffect(() => {
-        const elementMap = document.getElementById('boxMap');
-        const elementPhone = document.getElementById('boxPhone');
-        const elementEnvelope = document.getElementById('boxEnvelope');
-        const elementFooter = document.getElementById('footer');
-
-        const options = {
-            root: null,
-            treshold: 1,
-        }
-        const sectionObserver = new IntersectionObserver((entries)=> {
-            const [entry] = entries;
-           if(entry.isIntersecting) {
-                elementPhone.classList.add('animated');
-                elementMap.classList.add('animated');
-                elementEnvelope.classList.add('animated');
-            }
-        }, options);
-        sectionObserver.observe(elementFooter);
-    }, []);
-
-
-
-    
     return(
         <div className={styles.home}>
             <div className={styles.slideUp}>
