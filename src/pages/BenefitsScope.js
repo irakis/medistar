@@ -1,15 +1,14 @@
-import React from "react";
 import styles from './BenefitsScope.module.scss';
 import clsx from 'clsx';
 
 const BenefitsScope = () => {
+ 
     return(
-        <div className={clsx(styles.benefitsScope, "p-4")}>
+        <div className={clsx(styles.benefitsScope, "p-4")} id="1212">
             <div className="row d-flex justify-content-center">
                 <div className="col-lg-6 col-sm-12 align-content-center text-center">
                     <h2>Zakres świadczeń w Zakładzie:</h2>
                     <ul>
-                    
                         <li>opieka lekarska</li>
                         <li>opieka pielęgniarska</li>
                         <li>rehabilitacja ogólna w podstawowym zakresie, 
@@ -38,7 +37,6 @@ const BenefitsScope = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 

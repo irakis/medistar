@@ -5,9 +5,9 @@ import clsx from 'clsx';
 const Footer = () => {
     return(
         <>
-            <div className={styles.footer}>
+            <div className={styles.footer} id='footer'>
                 <div className="row justify-content-center">
-                    <div className={clsx(styles.boxMap,"col-lg-4 col-sm-11")}>
+                    <div className={`${styles.boxMap} col-lg-4 col-sm-11`} id='boxMap'>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <a href='/contact'>
@@ -21,7 +21,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={clsx(styles.boxPhone,"col-lg-4 col-sm-11")}>
+                    <div className={clsx(styles.boxPhone,"col-lg-4 col-sm-11")} id='boxPhone'>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/telephone.svg`} alt='phone_1'/>
@@ -33,7 +33,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={clsx(styles.boxEnvelope, "col-lg-4 col-sm-11")}>
+                    <div className={clsx(styles.boxEnvelope, "col-lg-4 col-sm-11")} id='boxEnvelope'>
                         <div className="row align-items-center py-auto">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/envelope-open.svg`} alt='envelope-open'/>
@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className={clsx(styles.copy)}>          
+            <div className={clsx(styles.copy)} id='copy'>          
                 <p>&copy; 2023 MEDISTAR. Wszelkie prawa zastrzeżone.</p>
                 <p>by: auxiliumpro44@gmail.com</p>
             </div>

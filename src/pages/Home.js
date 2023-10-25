@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
 import styles from './Home.module.scss';
 import Card from '../components/Card';
 import clsx from 'clsx';
 import CardMain from '../components/CardMain';
 import CardAffair from '../components/CardAffair';
 import SlideBottomComponent from '../components/SlideBottomComponent';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
+
+    const [freeBeds, setFreeBeds] = useState(0);
 
     const opiekaText = `
         <p>Naszymi pacjentami zajmuje się wysokospecjalizowana kadra lekarska i pielęgniarska.
@@ -64,32 +66,49 @@ const Home = () => {
             Terapia zajęciowa odbywa się codziennie od poniedziałku do piątku.
         </p>
     `
-    const targets = document.querySelectorAll('.slideBottom');
-    const handleIntersectionObserver = () => {
-        let options = {
-            root: null ,
-            rootMargin: '0px',
-            treshold: 1.0,
-        }
-
-        const activeObserver = (target) => {
-            const sliderObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    console.log(entry)
-            })}, options)
-            sliderObserver.observe(target);
-        };
-
-        targets.forEach(activeObserver);
-    }
 
     useEffect(() => {
-        console.log(targets);
-        handleIntersectionObserver();
-    }, [targets]);
+        const element = document.getElementById('footer');
+        const options = {
+            root: null,
+            treshold: 0.1,
+        }
+        const sectionObserver = new IntersectionObserver((entries)=> {
+            const [entry] = entries;
+            if(entry.isIntersecting) {
+                setFreeBeds(10);
+
+    {/*----------------setFreeBeds ony triggers rendering sliderBottom not chenging value in useState---------*/}
+                
+            }
+        }, options);
+        sectionObserver.observe(element);
+    }, []);
+
+    useEffect(() => {
+        const elementMap = document.getElementById('boxMap');
+        const elementPhone = document.getElementById('boxPhone');
+        const elementEnvelope = document.getElementById('boxEnvelope');
+        const elementFooter = document.getElementById('footer');
+
+        const options = {
+            root: null,
+            treshold: 1,
+        }
+        const sectionObserver = new IntersectionObserver((entries)=> {
+            const [entry] = entries;
+           if(entry.isIntersecting) {
+                elementPhone.classList.add('animated');
+                elementMap.classList.add('animated');
+                elementEnvelope.classList.add('animated');
+            }
+        }, options);
+        sectionObserver.observe(elementFooter);
+    }, []);
+
+
+
     
-
-
     return(
         <div className={styles.home}>
             <div className={styles.slideUp}>
@@ -240,13 +259,13 @@ const Home = () => {
                         text='Miejsc w zakładzie opiekuńczo – leczniczym'
                         url={`${process.env.PUBLIC_URL}/images/icons/id-card-clip-solid.svg`}
                         alt='id-card-clip'
-                        number={40}
+                        number={50}
                     />
                     <SlideBottomComponent
                         text='Wonych miejsc w zakładzie leczniczym'
                         url={`${process.env.PUBLIC_URL}/images/icons/bed-pulse-solid.svg`}
                         alt='bed-pulse'
-                        number={0}
+                        number={freeBeds}
                     />
                     <SlideBottomComponent
                         text='Opieka sprawowana całodobowo'

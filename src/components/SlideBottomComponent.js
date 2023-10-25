@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import styles from './SlideBottomComponent.module.scss';
 
 const SlideBottomComponent = (parameters) => {
-
+ 
     const numberLimit = parameters.number;
     const numberName = parameters.name;
     let upto = 0;
@@ -32,7 +32,7 @@ const SlideBottomComponent = (parameters) => {
                 <div className='col-6 col-sm-5'>
                     <img src={parameters.url} alt={parameters.alt}/>
                 </div>
-                <div className='col-6  col-sm-5 text-center'><h1 id={parameters.text}></h1></div>
+                <div className='col-6  col-sm-5 text-center'><h1 id={parameters.text}>0</h1></div>
             </div>
             <div className='row align-items-center m-2'>
                 <div className='col-12  col-sm-10 text-center m-2'><h5>{parameters.text}</h5></div>

@@ -29,8 +29,7 @@
         background-color: $backbround-color-green-dark;
         height: 200px;
         padding-top: 40px;
-        animation-name: box;
-        animation-duration: 4s;
+        animation: box 4s ease-in-out;
         @media (max-width: 575.98px) {
             height: auto;
         }
@@ -39,9 +38,7 @@
         background-color: $background-color-green;
         height: 200px;
         padding-top: 40px;
-        animation-name: box;
-        animation-duration: 4s;
-        animation-delay: 1s;
+        animation: box 4s ease-in-out;
         @media (max-width: 575.98px){
             height: auto;
             padding:auto;
@@ -51,9 +48,7 @@
         background-color: $backbround-color-green-light;
         height: 200px;
         padding-top: 40px;
-        animation-name: box;
-        animation-duration: 4s;
-        animation-delay: 2s;
+        animation: box 4s ease-in-out;
         @media (max-width: 575.98px){
             height: auto;
             padding:auto;
