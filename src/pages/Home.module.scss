@@ -5,12 +5,8 @@
         height: 750px;
         overflow: hidden;
         position: relative;
-        background-image: url(../../public/images/pexels-rdne-stock-project-6129655.avif);
-        @media (max-width: 991.98px) {
-            background-size: cover;
-            mask-repeat: no-repeat;
-            min-height: 250px;
-        }
+        background-image: url(../../public/images/pulse-3530383_1280.avif);
+        background-size: cover;
     }
     .info {
         position: absolute;
@@ -80,6 +76,10 @@
         position: sticky;
         bottom: 30px;
         z-index: -1;
+        @media (max-width: 991.98px) {
+            height: 300px;
+            width: 100%;
+        }
         .slideInner {
             margin: 250px 28px;
             position: absolute;
@@ -90,5 +90,4 @@
         }
         
     }
-
 }

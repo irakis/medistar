@@ -24,9 +24,9 @@ const Home = () => {
         <p>Rehabilitacja ma na celu jak najdłuższe utrzymanie sprawności fizycznej pacjenta, co poprawia
             komfort życia codziennego. W przypadku pacjentów, którzy taką sprawność utracili, rehabilitacja
             polega na jej przywróceniu w stopniu możliwie najwyższym, na jaki pozwala obecny stan ich zdrowia.
-            Rehabilitacją w ZOL objęta jest każda podopieczna po wcześniejszej konsultacji medycznej. Za
+            Rehabilitacją w ZOL objęta jest każdy pacjent/pacjentka po wcześniejszej konsultacji medycznej. Za
             realizację zleceń lekarskich odpowiedzialna jest wyspecjalizowana kadra fizjoterapeutów.
-            W obiekcie znajduje się sala rehabilitacyjna wyposażona m.in. w:
+            W obiekcie znajduje się sala rehabilitacyjna wyposażona m.in. w :
         </p>
         <ul>UGUL (Uniwersalny Gabinet Usprawniania Leczniczego),
             <li>rotory kończyn dolnych,</li>
@@ -93,7 +93,7 @@ const Home = () => {
                     <p>ZOL „Stara Wieś” jest zakładem udzielającym całodobowych świadczeń zdrowotnych, które obejmują
                         swoim zakresem pielęgnację i rehabilitację osób, które przebyły ostrą fazę leczenia szpitalnego, mają
                         ukończony proces diagnozowania, leczenia operacyjnego lub intensywnego leczenia zachowawczego,
-                        jednak nie wymagają dalszej hospitalizacji, a ze względy na stan zdrowia i stopień
+                        jednak nie wymagają dalszej hospitalizacji, a ze względu na stan zdrowia i stopień
                         niepełnosprawności oraz brak możliwości samodzielnego funkcjonowania w środowisku domowym.
                     </p>
                     <a href='/offer' role="button" className="btn btn-outline-light">
@@ -108,7 +108,7 @@ const Home = () => {
                 <div className='col-md-4 col-sm-12'>
                     <CardAffair
                         text='Terapia zajęciowa - kształtowanie spostrzegawczości'
-                        url={`${process.env.PUBLIC_URL}/images/gallery/20230918_093658.avif`}
+                        url={`${process.env.PUBLIC_URL}/images/gallery/patyczki.avif`}
                         alt='picture_1'
                         link='/gallery'
                     />
@@ -116,15 +116,15 @@ const Home = () => {
                 <div className='col-md-4 col-sm-12'>
                     <CardAffair
                         text='Terapia zajęciowa - poprawiamy sprawność ręki'
-                        url={`${process.env.PUBLIC_URL}/images/gallery/20231004_102318.avif`}
+                        url={`${process.env.PUBLIC_URL}/images/gallery/rece.avif`}
                         alt='picture_2'
                         link='/gallery'
                     />
                 </div>
                 <div className='col-md-4 col-sm-12'>
                     <CardAffair
-                        text='Terapia zajęciowa - zajęcia grupowe'
-                        url={`${process.env.PUBLIC_URL}/images/gallery/20230922_093209.avif`}
+                        text='Terapia zajęciowa - efekty pracy'
+                        url={`${process.env.PUBLIC_URL}/images/gallery/efekty.avif`}
                         alt='picture_2'
                         link='/gallery'
                     />
@@ -143,9 +143,9 @@ const Home = () => {
             </div>
 
             <div className='row'>
-                <div className='col-lg-6 col-sm-12 p-0'>
+                <div className='col-lg-6 col-sm-12 p-0 m-0'>
                     <CardMain
-                        url={`${process.env.PUBLIC_URL}/images/Stara_Wies_1.avif`}
+                        url={`${process.env.PUBLIC_URL}/images/health.avif`}
                         alt='hospital_2'
                     />
                 </div>

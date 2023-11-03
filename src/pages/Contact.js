@@ -7,7 +7,7 @@ const Contact = () => {
 <div className={clsx(styles.contact,"p-1")}>
     <div className={styles.mapDiv}>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9618528650826!2d22.570564147406863!3d50.94492546193452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47231d8c1e618679%3A0x72967cdc97fd2bf1!2sStara%20Wie%C5%9B%20Pierwsza%2099%2C%2023-100%20Stara%20Wie%C5%9B%20Pierwsza!5e1!3m2!1spl!2spl!4v1697723150577!5m2!1spl!2spl"
-             width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='starawies_map'></iframe>
+             width="100%" height="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='starawies_map'></iframe>
     </div>
     <div className="row mb-5">
         <div className={clsx(styles.adresColumn,"col-lg-4 col-md-12 d-block text-center")}>
@@ -16,6 +16,7 @@ const Contact = () => {
             <p>ul. TARGOWA 9/53</p>
             <p> 21-040 ŚWIDNIK</p>
             <p>LUBELSKIE</p>
+            <p>Nr BDO: 000584591</p>
         </div>
         <div className="col-lg-4 col-md-12">
             <div className={clsx(styles.puzzle,'d-flex align-items-center')}>
@@ -39,7 +40,7 @@ const Contact = () => {
             </div>
             <div className=" d-flex justify-content-center text-center">
                 opieka lecznicza 24h/7, <br></br>
-                godziny odwiedzin po uprzednim ustaleniu w godzinach 10-18
+                godziny odwiedzin po uprzednim ustaleniu w godzinach 10-12 oraz 15-17
 
             </div>
         </div>
@@ -66,7 +67,7 @@ const Contact = () => {
                 </div> 
             </div>
             <div className=" d-flex justify-content-center text-center">
-                zol_starawies@10g.pl
+                zol.starawies@gmail.com
             </div>
         </div>
     </div>

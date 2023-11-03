@@ -41,7 +41,7 @@ const Footer = () => {
                             <div className="col-lg-9 col-sm-12">
                                 <p>Masz pytania?</p>
                                 <p>Napisz do nas</p>
-                                <h4>zol_starawies@10g.pl</h4>
+                                <h4>zol.starawies@gmail.com</h4>
                             </div>
                         </div>
                     </div>

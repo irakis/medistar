@@ -35,12 +35,12 @@ const Header = () => {
                         </li>
                         <li className='list-inline-item'>
                             <span className="bi bi-phone">
-                                +48 81 5032277
+                                +48 500867770
                             </span>
                         </li>
                         <li className='list-inline-item'>
                             <span className="bi bi-envelope-at pr-1">
-                                 mail adress: zol_starawies@10g.pl
+                                 mail adress: zol.starawies@gmail.com
                             </span>
                         </li>    
                     </ul>

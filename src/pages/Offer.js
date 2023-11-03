@@ -41,9 +41,10 @@ const Offer = () => {
                 <li>łóżka z regulacją wysokości</li>
                 <li>materace przeciwodleżynowe</li>
                 <li>inhalatory, pulsoksymetry, koncentratory tlenu, pompy infuzyjne, ssaki elektryczne,
-                gleukometry</li>
+                glukometry</li>
                 <li>sprzęt rehabilitacyjny</li>
                 <li>EKG</li>
+                <li>kardiomonitor</li>
             </ul>
 
            

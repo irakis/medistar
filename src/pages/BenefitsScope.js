@@ -17,7 +17,7 @@ const BenefitsScope = () => {
                         <li>świadczenia psychologa</li>
                         <li>terapia zajęciowa</li>
                         <li>żywienie dojelitowe</li>
-                        <li>dukacja zdrowotna</li>
+                        <li>edukacja zdrowotna</li>
                         <li>opieka duszpasterska</li>
                     </ul>
                     <p>
@@ -28,12 +28,9 @@ const BenefitsScope = () => {
                         <li>leki</li>
                         <li>zaopatrzenie w wyroby medyczne</li>
                     </ul>
-                    <p>Podopieczni mają zagwarantowane pomieszczenia 3 łóżkowe i wyżywienie odpowiednie do stanu zdrowia, 
+                    <p>Podopieczni mają zagwarantowane pomieszczenia 2, 3 lub 4 łóżkowe i wyżywienie odpowiednie do stanu zdrowia, 
                         a także uczestnictwo w zorganizowanych zajęciach z zakresu terapii zajęciowej.
                     </p>  
-                </div>
-                <div className="col-lg-6 col-sm-12">
-                    <img src={`${process.env.PUBLIC_URL}/images/gallery/gallerySite/Optimized-20230405_100943.avif`} alt='inner_image'/>
                 </div>
             </div>
         </div>
