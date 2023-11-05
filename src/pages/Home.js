@@ -162,7 +162,7 @@ const Home = () => {
             </div>
             <div className='row'>
                 <div className={clsx(styles.infoCall, 'col-12')}>
-                    <h4>Masz do nas pytania? Zadzwoń +48 81 5032277</h4>
+                    <h4>Masz do nas pytania? Zadzwoń +48 500867770</h4>
                 </div>
             </div>
 

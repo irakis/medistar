@@ -34,14 +34,14 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={clsx(styles.boxEnvelope, "col-lg-4 col-sm-11")} id='boxEnvelope'>
-                        <div className="row align-items-center py-auto">
+                        <div className="row align-items-center">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/envelope-open.svg`} alt='envelope-open'/>
                             </div>
                             <div className="col-lg-9 col-sm-12">
                                 <p>Masz pytania?</p>
                                 <p>Napisz do nas</p>
-                                <h4>zol.starawies@gmail.com</h4>
+                                <p>zol.starawies@gmail.com</p>
                             </div>
                         </div>
                     </div>
