@@ -182,7 +182,7 @@ const Home = () => {
                     /> 
                 </div>
             </div>
-            <div className='row'>
+            <div className={clsx(styles.reverse, 'row')}>
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <Card
                         header = 'Rehabilitacja'
@@ -210,7 +210,7 @@ const Home = () => {
                     />
                 </div>
             </div>
-            <div className='row'>
+            <div className={clsx(styles.reverse, 'row')}>
                 <div className='col-lg-6 col-sm-12 p-0'>
                     <Card
                         header = 'Terapia zajęciowa'

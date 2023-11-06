@@ -11,15 +11,17 @@
         padding: 8px 48px;
     }
     @media (max-width: 991.98px) {
-        height: auto;
+        height: 100%;
         margin: 0;
         padding: 0;
-        h3, p {
+        h3 {
             padding: 16px;
         }
-
+        p {
+            padding: 16px;
+            margin-bottom: 0;
+        }
     }
-
     img {
         object-fit: cover;
         overflow: hidden;
@@ -30,7 +32,6 @@
         left: 0px;
         top: 0px;
         @media (max-width: 991.98px) {
-            height: 300px;
             object-fit: cover;
             margin: 0;
             padding: 0;

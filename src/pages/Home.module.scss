@@ -24,6 +24,7 @@
             right: 8px;
             top: 8px;
             width: auto;
+            height: auto;
         }
     }
     a {
@@ -77,17 +78,22 @@
         bottom: 30px;
         z-index: -1;
         @media (max-width: 991.98px) {
-            height: 300px;
             width: 100%;
         }
         .slideInner {
             margin: 250px 28px;
             position: absolute;
             width: 100%;
+            text-shadow: 3px 1px #7b8487;
             @media (max-width: 991.98px) {
-                margin: 100px 28px;
+                margin: 80px 0;
             }
+        }    
+    }
+    .reverse {
+        @media (max-width: 991.98px) {
+            height: auto;
+            flex-direction: column-reverse;
         }
-        
     }
 }

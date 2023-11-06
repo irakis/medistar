@@ -36,6 +36,24 @@
                 margin: 6px auto;
             }
         }
+        img{
+            margin: 6px ;
+            height: 40px;
+            width: auto;
+        }
+    }
+    .nfz {
+        @media (max-width: 575.98px){
+            text-align: center;
+            a img{
+                margin: 6px auto;
+            }
+        }
+        img{
+            margin: 6px auto auto 0 ;
+            height: 40px;
+            width: auto;
+        }
     }
     .logo {
         width: 200px;

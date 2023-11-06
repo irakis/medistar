@@ -24,7 +24,7 @@ const Header = () => {
     return(
         <div className={styles.header}>
             <div className='row d-md-flex d-sm-block align-items-center'>
-                <div className='col-md-10 col-sm-12 '>
+                <div className='col-md-8 col-sm-12 '>
                     <ul className='list-inline-horizontal'>
                         <li className='list-inline-item'>
                             <span className="bi bi-geo-alt">
@@ -57,6 +57,9 @@ const Header = () => {
                     <a className={styles.bip} href={`${process.env.REACT_APP_BIP}`} target='_blank'rel='noreferrer'>
                         <img src={`${process.env.PUBLIC_URL}/images/icons/POL_BIP_icon.svg.png`} alt='bip_icon'></img>
                     </a>
+                </div>
+                <div className={clsx(styles.nfz,'col-md-1 col-sm-6 text-center')}>
+                    <img src={`${process.env.PUBLIC_URL}/images/icons/nfz_logo_A_kolor-min.jpg`} alt='nfz_icon'></img>
                 </div>
 
                 {/*----------------------ISO AND BIP END-----------------------------*/}
