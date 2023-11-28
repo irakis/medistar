@@ -24,7 +24,7 @@ const Header = () => {
     return(
         <div className={styles.header}>
             <div className='row d-md-flex d-sm-block align-items-center'>
-                <div className='col-md-8 col-sm-12 '>
+                <div className='col-md-7 col-sm-12 '>
                     <ul className='list-inline-horizontal'>
                         <li className='list-inline-item'>
                             <span className="bi bi-geo-alt">
@@ -49,10 +49,15 @@ const Header = () => {
                 {/*----------------------ISO AND BIP START-----------------------------*/}
 
                 <div className={clsx(styles.social, 'col-md-1 col-sm-6')}>
-                    <a  className={styles.bip} href={`${process.env.PUBLIC_URL}/documents/20231024-093618_Optimized.pdf`} target='_blank'rel='noreferrer'>
-                        <img src={`${process.env.PUBLIC_URL}/images/icons/iso.svg`} alt='iso_icon'/>
+                    <a  className={styles.bip} href={`${process.env.PUBLIC_URL}/documents/ISO2021.pdf`} target='_blank'rel='noreferrer'>
+                        <img src={`${process.env.PUBLIC_URL}/images/icons/ISO 27001.avif`} alt='iso_icon'/>
                     </a>
-                </div>  
+                </div>
+                <div className={clsx(styles.social, 'col-md-1 col-sm-6')}>
+                    <a  className={styles.bip} href={`${process.env.PUBLIC_URL}/documents/ISO2022.pdf`} target='_blank'rel='noreferrer'>
+                        <img src={`${process.env.PUBLIC_URL}/images/icons/Znaczek-PNG-ISO-9001.avif`} alt='iso_icon'/>
+                    </a>
+                </div>   
                 <div className={clsx(styles.social,'col-md-1 col-sm-6 text-center')}>
                     <a className={styles.bip} href={`${process.env.REACT_APP_BIP}`} target='_blank'rel='noreferrer'>
                         <img src={`${process.env.PUBLIC_URL}/images/icons/POL_BIP_icon.svg.png`} alt='bip_icon'></img>

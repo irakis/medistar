@@ -3,11 +3,12 @@ import styles from "./Footer.module.scss";
 import clsx from 'clsx';
 
 const Footer = () => {
+    console.log(styles);
     return(
         <>
             <div className={styles.footer} id='footer'>
-                <div className="row justify-content-center">
-                    <div className={`${styles.boxMap} col-lg-4 col-sm-11`} id='boxMap'>
+                <div className="row justify-content-center" id='footerBoxRow'>
+                    <div className={clsx(styles.boxMap, styles.boxMap__animated,'col-lg-4 col-sm-11')} id='boxMap'>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <a href='/contact'>
@@ -33,7 +34,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={clsx(styles.boxEnvelope, "col-lg-4 col-sm-11")} id='boxEnvelope'>
+                    <div className={clsx(styles.boxEnvelope, styles.boxEnvelope__animated, "col-lg-4 col-sm-11")} id='boxEnvelope'>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/envelope-open.svg`} alt='envelope-open'/>

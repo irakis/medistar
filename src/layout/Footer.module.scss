@@ -1,9 +1,19 @@
 @import '../styles/settings.scss';
 
-@keyframes box {
-   from {position: absolute; left: -200px; opacity: 0}
-    to {position: relative; padding-top: 40px; opacity: 1}
+@keyframes box3 {
+    from { transform: translateX(-200%); opacity: 0 }
+    to { transform: translateX(0%); opacity: 1 }
+ }
+ @keyframes box2 {
+    from { transform: translateX(-100%); opacity: 0 }
+    to { transform: translateX(0%); opacity: 1 }
+ }
+ 
+@keyframes box1 {
+    from { transform: translateX(-80%); opacity: 0 }
+    to { transform: translateX(0%); opacity: 1 }
 }
+
 
 .footer {
     height: 200px;
@@ -29,7 +39,12 @@
         background-color: $backbround-color-green-dark;
         height: 200px;
         padding-top: 40px;
-        animation: box 4s ease-in-out;
+        &__animated {
+            animation: box1;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            z-index: 4;
+        }
         @media (max-width: 575.98px) {
             height: auto;
         }
@@ -38,7 +53,12 @@
         background-color: $background-color-green;
         height: 200px;
         padding-top: 40px;
-        animation: box 4s ease-in-out;
+        animation: box2;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        transition-delay: 1s;
+        animation-timing-function: ease-out;
+        z-index: 3;
         @media (max-width: 575.98px){
             height: auto;
             padding:auto;
@@ -48,7 +68,14 @@
         background-color: $backbround-color-green-light;
         height: 200px;
         padding-top: 40px;
-        animation: box 4s ease-in-out;
+        &__animated {
+            animation: box3;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            transition-delay: 2s;
+            animation-timing-function: ease-out;
+            z-index: 2;
+        }
         @media (max-width: 575.98px){
             height: auto;
             padding:auto;
