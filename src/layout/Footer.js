@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Footer.module.scss";
 import clsx from 'clsx';
 
 const Footer = () => {
-    console.log(styles);
+
+    const [animated, setAnimated] = useState(false);
+
+    useEffect(()=>{
+        const element = document.getElementById('footer');
+        const options = {
+            roots: null,
+            treshold: 0.4,
+        }
+        const sectionObserver = new IntersectionObserver((entries)=>{
+            const [entry] = entries;
+            if(entry.isIntersecting) {
+                setAnimated((animated) => animated = true);
+            }
+        }, options);
+        sectionObserver.observe(element);
+    },[]);
+
     return(
         <>
             <div className={styles.footer} id='footer'>
                 <div className="row justify-content-center" id='footerBoxRow'>
-                    <div className={clsx(styles.boxMap, styles.boxMap__animated,'col-lg-4 col-sm-11')} id='boxMap'>
+                    <div className={clsx(styles.boxMap, {[styles.boxMap__animated] : animated},'col-lg-4 col-sm-11')} id='boxMap'>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <a href='/contact'>
@@ -22,7 +39,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={clsx(styles.boxPhone,"col-lg-4 col-sm-11")} id='boxPhone'>
+                    <div className={clsx(styles.boxPhone, {[styles.boxPhone__animated] : animated} ,"col-lg-4 col-sm-11")} id='boxPhone'>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/telephone.svg`} alt='phone_1'/>
@@ -34,7 +51,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={clsx(styles.boxEnvelope, styles.boxEnvelope__animated, "col-lg-4 col-sm-11")} id='boxEnvelope'>
+                    <div className={clsx(styles.boxEnvelope, {[styles.boxEnvelope__animated] : animated},"col-lg-4 col-sm-11")} id='boxEnvelope'>
                         <div className="row align-items-center">
                             <div className="col-3">
                                 <img src={`${process.env.PUBLIC_URL}/images/icons/envelope-open.svg`} alt='envelope-open'/>

@@ -79,14 +79,6 @@ const Home = () => {
                 setFreeBeds(10);
 
     {/*----------------setFreeBeds ony triggers rendering sliderBottom not chenging value in useState---------*/}
-                
-            const element1 = document.getElementById('boxMap');
-            const element2 = document.getElementById('boxPhone');
-            const element3 = document.getElementById('boxEnvelope');
-
-            element1.classList.add('animated1');
-            element2.classList.add('animated2');
-            element3.classList.add('boxEnvelope.animated');
 
             }
         }, options);
