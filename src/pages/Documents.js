@@ -11,6 +11,8 @@ const Documents = () => {
             <a href={`${process.env.PUBLIC_URL}/documents/Skierowanie_do_ZOL.pdf`} target="_blank" rel='noreferrer'>Skierowanie do ZOL</a>
             <a href={`${process.env.PUBLIC_URL}/documents/Skala_Barthel.pdf`} target="_blank" rel='noreferrer'>Skala Barthel</a>
             <a href={`${process.env.PUBLIC_URL}/documents/Skala_Glasgow.pdf`} target="_blank" rel='noreferrer'>Skala Glasgow</a>
+            <a href={`${process.env.PUBLIC_URL}/documents/Wysokosc-oplat-za-transport-i-przechowywanie-zwlok-pacjenta zol.pdf`} target="_blank" rel='noreferrer'>Cennik transportu i przechowywania zwłok pacjenta</a>
+            <a href={`${process.env.PUBLIC_URL}/documents/Cennik-udostepniania-dokumentacji-medycznej-na-rok-2024 bychawa.pdf`} target="_blank" rel='noreferrer'>Cennik udostępniania dokumentacji medycznej</a>
             
     </div>
     )

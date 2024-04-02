@@ -56,7 +56,7 @@ const Contact = () => {
             <div className=" d-flex justify-content-center text-center">
                 informacja: +48 500 867 770,
                 +48 81 5032277,<br></br>
-                informacja medyczna dla pacjenta: +48 666 686 062
+                informacja medyczna dla pacjenta: +48 500 867 770
             </div>
             <div className={clsx(styles.puzzle,'d-flex align-items-center')}>
                 <div className={clsx(styles.hexagon, 'd-flex justify-content-center align-items-center')}>
