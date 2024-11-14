@@ -6,8 +6,8 @@ const Contact = () => {
     return(
 <div className={clsx(styles.contact,"p-1")}>
     <div className={styles.mapDiv}>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9618528650826!2d22.570564147406863!3d50.94492546193452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47231d8c1e618679%3A0x72967cdc97fd2bf1!2sStara%20Wie%C5%9B%20Pierwsza%2099%2C%2023-100%20Stara%20Wie%C5%9B%20Pierwsza!5e1!3m2!1spl!2spl!4v1697723150577!5m2!1spl!2spl"
-             width="100%" height="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='starawies_map'></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62183.01003261854!2d22.33722246532482!3d51.28096017322368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225f62c932a023%3A0x8ee5fa1ab1cc3544!2sTomaszowice%2016A%2C%2021-008%20Tomaszowice!5e1!3m2!1spl!2spl!4v1731532290872!5m2!1spl!2spl"
+             width="100%" height="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='tomaszowice_map'></iframe>
     </div>
     <div className="row mb-5">
         <div className={clsx(styles.adresColumn,"col-lg-4 col-md-12 d-block text-center")}>
@@ -28,7 +28,7 @@ const Contact = () => {
                 </div> 
             </div>
             <div className=" d-flex justify-content-center text-center">
-            Stara Wieś Pierwsza 99, 23-100 Bychawa
+            Tomaszowice 16A, <br></br> 23-100 Tomaszowice
             </div>
             <div className={clsx(styles.puzzle,'d-flex align-items-center')}>
                 <div className={clsx(styles.hexagon, 'd-flex justify-content-center align-items-center')}>
@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
             <div className=" d-flex justify-content-center text-center">
                 opieka lecznicza 24h/7, <br></br>
-                godziny odwiedzin po uprzednim ustaleniu w godzinach 10-12 oraz 15-17
+                godziny odwiedzin po uprzednim ustaleniu. Biuro czynne w godzinach 8-16
 
             </div>
         </div>
@@ -55,8 +55,8 @@ const Contact = () => {
             </div>
             <div className=" d-flex justify-content-center text-center">
                 informacja: +48 500 867 770,
-                +48 81 5032277,<br></br>
-                informacja medyczna dla pacjenta: +48 500 867 770
+                <br></br>
+                informacja medyczna dla pacjenta: +48 500 867 636
             </div>
             <div className={clsx(styles.puzzle,'d-flex align-items-center')}>
                 <div className={clsx(styles.hexagon, 'd-flex justify-content-center align-items-center')}>
@@ -67,7 +67,7 @@ const Contact = () => {
                 </div> 
             </div>
             <div className=" d-flex justify-content-center text-center">
-                zol.starawies@gmail.com
+                kontakt@medistar.com.pl
             </div>
         </div>
     </div>

@@ -40,7 +40,7 @@ const Home = () => {
         <p>Rehabilitacja odbywa się codziennie od poniedziałku do piątku.</p>
     `
     const psychologText = `
-        <p>Terapia psychologiczna pacjentów ZOL „Stara Wieś” zajmuje ważne miejsce w działaniach
+        <p>Terapia psychologiczna pacjentów ZOL „Tomaszowice” zajmuje ważne miejsce w działaniach
             rehabilitacyjnych. Obejmuje ona szereg różnorodnych działań, dostosowanych do
             indywidualnych potrzeb pacjentów. Działania podejmowane przez psychologa w zakładzie
             opiekuńczo – leczniczym obejmują:
@@ -54,8 +54,7 @@ const Home = () => {
     `
     const terapiaText = `
         <p>
-            Terapia zajęciowa jest ważnym elementem pracy z osobami starszymi, przebywającymi w ZOL „Stara
-            Wieś”. Działania odbywają się głównie w zakresie postępowania wspierająco – aktywizującego. Ich
+            Terapia zajęciowa jest ważnym elementem pracy z osobami starszymi, przebywającymi w ZOL „Tomaszowice”. Działania odbywają się głównie w zakresie postępowania wspierająco – aktywizującego. Ich
             celem jest podtrzymanie sprawności psychofizycznej oraz wspomaganie rehabilitacji, zwłaszcza u
             osób po różnego rodzaju urazach. Zajęcia w ramach terapii są bardzo urozmaicone. W świetlicy
             uczestnicy mają szansę wyrażania własnych emocji, przeżyć. Mają możliwość indywidualnego
@@ -77,9 +76,6 @@ const Home = () => {
             const [entry] = entries;
             if(entry.isIntersecting) {
                 setFreeBeds(10);
-
-    {/*----------------setFreeBeds ony triggers rendering sliderBottom not chenging value in useState---------*/}
-
             }
         }, options);
         sectionObserver.observe(element);
@@ -90,11 +86,12 @@ const Home = () => {
             <div className={styles.slideUp}>
                 <div className={styles.info}>
                     <h2>INFORMACJA</h2>
-                    <p>ZOL „Stara Wieś” jest zakładem udzielającym całodobowych świadczeń zdrowotnych, które obejmują
+                    <p>ZOL „Tomaszowice” jest zakładem udzielającym całodobowych świadczeń zdrowotnych, które obejmują
                         swoim zakresem pielęgnację i rehabilitację osób, które przebyły ostrą fazę leczenia szpitalnego, mają
                         ukończony proces diagnozowania, leczenia operacyjnego lub intensywnego leczenia zachowawczego,
                         jednak nie wymagają dalszej hospitalizacji, a ze względu na stan zdrowia i stopień
                         niepełnosprawności oraz brak możliwości samodzielnego funkcjonowania w środowisku domowym.
+                        <b>Obiekt jest monitorowany całodobowo. Wysokość comiesięcznej opłaty za pobyt w ZOL naliczana jest zgodnie z Art. 18, pkt. 1 Ustawy z dnia 27 sierpnia 2004 o świadczeniach opieki zdrowotnej finansowanej ze środków publicznych.</b>
                     </p>
                     <a href='/offer' role="button" className="btn btn-outline-light">
                         Przeczytaj więcej...

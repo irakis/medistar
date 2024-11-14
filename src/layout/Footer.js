@@ -34,8 +34,8 @@ const Footer = () => {
                             </div>
                             <div className="col-lg-9 col-sm-12">
                                 <p>Jak do nas dotrzeć?</p>
-                                <h4>Stara Wieś Pierwsza 99, </h4>
-                                <h4>23-100 Bychawa </h4>
+                                <h4>Tomaszowice 16A, </h4>
+                                <h4>21-008 Tomaszowice</h4>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                             <div className="col-lg-9 col-sm-12">
                                 <p>Masz pytania?</p>
                                 <p>Napisz do nas</p>
-                                <p>zol.starawies@gmail.com</p>
+                                <p>biuro@medistar.com.pl</p>
                             </div>
                         </div>
                     </div>

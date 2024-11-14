@@ -29,7 +29,7 @@ const Header = () => {
                         <li className='list-inline-item'>
                             <span className="bi bi-geo-alt">
                                 <a href='/contact'>
-                                    Stara Wieś Pierwsza 99, 23-100 Bychawa
+                                    Tomaszowice 16A, 21-008 Tomaszowice
                                 </a>
                             </span>
                         </li>
@@ -40,7 +40,7 @@ const Header = () => {
                         </li>
                         <li className='list-inline-item'>
                             <span className="bi bi-envelope-at pr-1">
-                                 mail adress: zol.starawies@gmail.com
+                                 mail adress: biuro@medistar.com.pl
                             </span>
                         </li>    
                     </ul>

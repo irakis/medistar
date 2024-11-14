@@ -9,11 +9,11 @@ const Application = () => {
             <h2>Złożenie dokumentów</h2>
             <p>Dokumenty należy złożyć osobiście do ZOL lub przesłać listownie na adres:<br>
             </br>
-                Zakład Opiekuńczo Leczniczy „Stara Wieś”<br>
+                Zakład Opiekuńczo Leczniczy „Tomaszowice”<br>
                 </br>
-                Stara Wieś Pierwsza 99<br>
+                Tomaszowice 16A<br>
                 </br>
-                23-100 Bychawa</p>
+                21-008 Tomaszowice</p>
         </div>
     )
 }
